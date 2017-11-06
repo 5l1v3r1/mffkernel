@@ -2,7 +2,9 @@
 *  tty.c
 */
 
-void cls(char *vidptr) {
+char *vidptr = (char*)0xb8000; 	//video mem begins here.
+
+void cls() {
 	unsigned int i = 0;
 	unsigned int j = 0;
 	/* this loops clears the screen
@@ -17,7 +19,7 @@ void cls(char *vidptr) {
 	j = 0; 
 }
 
-void kprint(char *vidptr,char *str) {
+void kprint(char *str) {
 	unsigned int j = 0;
 	unsigned int i = 0;
 	/* this loop writes the string to video memory */
