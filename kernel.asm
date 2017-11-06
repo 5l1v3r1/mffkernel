@@ -17,6 +17,7 @@ start:
   mov esp, stack_space	;set stack pointer
   call kmain
   hlt		 	;halt the CPU
+  cli
 
 section .bss
 resb 8192		;8KB for stack
