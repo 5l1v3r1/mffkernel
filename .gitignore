@@ -1,0 +1,4 @@
+build
+*.d
+*.kernel
+*.o
