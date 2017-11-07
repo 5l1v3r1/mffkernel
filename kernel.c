@@ -2,8 +2,6 @@
 *  kernel.c
 */
 
-#include "io.h"
-
 void disable_ints();
 void enable_ints();
 int check_A20();
